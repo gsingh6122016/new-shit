@@ -12,8 +12,21 @@ info2.style.display="none";
 info3.style.display="none";
 info4.style.display="none";
 
+
   btn1.onclick= function() {
   info1.style.display="block";
+
+var paddingLeft=0;
+var timer = setInterval(function(){
+  if (paddingLeft>=25){
+      clearInterval(timer);
+  }
+  info1.style.paddingLeft= paddingLeft +"px ";
+  paddingLeft=paddingLeft + 1;
+},10);
+
+
+
   info2.style.display="none";
   info3.style.display="none";
   info4.style.display="none";
@@ -23,9 +36,21 @@ info4.style.display="none";
   btn4.style.fontWeight="normal";
   }
 
+
   btn2.onclick= function() {
     info1.style.display="none";
     info2.style.display="block";
+    
+    var paddingLeft=0;
+    var timer = setInterval(function(){
+      if (paddingLeft>=25){
+          clearInterval(timer);
+      }
+      info2.style.paddingLeft= paddingLeft +"px ";
+      paddingLeft=paddingLeft + 1;
+    },10);
+
+
     info3.style.display="none";
     info4.style.display="none";
     btn2.style.fontWeight="bold";
@@ -56,4 +81,4 @@ info4.style.display="none";
   btn2.style.fontWeight="normal";
             }
                   
-
+      
