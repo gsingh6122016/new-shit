@@ -7,23 +7,44 @@ var info1 = document.getElementById("info1");
 var info2 = document.getElementById("info2");
 var info3 = document.getElementById("info3");
 var info4 = document.getElementById("info4");
+
 info1.style.display="block";
 info2.style.display="none";
 info3.style.display="none";
 info4.style.display="none";
 
 
+btn1.style.fontWeight="bold";
+
+var op = 0 ;
+info1.style.opacity = 0;
+var marginLeft=0;
+var timer = setInterval(function(){
+if (marginLeft>=60){
+    clearInterval(timer);
+}
+
+info1.style.opacity=op;
+op=op+0.008;
+info1.style.marginLeft= marginLeft +"px ";
+marginLeft=marginLeft + 0.5;
+},5);
   btn1.onclick= function() {
   info1.style.display="block";
 
-var paddingLeft=0;
+  var op = 0 ;
+  info1.style.opacity = 0;
+var marginLeft=0;
 var timer = setInterval(function(){
-  if (paddingLeft>=25){
+  if (marginLeft>=60){
       clearInterval(timer);
   }
-  info1.style.paddingLeft= paddingLeft +"px ";
-  paddingLeft=paddingLeft + 1;
-},10);
+
+  info1.style.opacity=op;
+  op=op+0.008;
+  info1.style.marginLeft= marginLeft +"px ";
+  marginLeft=marginLeft + 0.5;
+},5);
 
 
 
@@ -41,14 +62,19 @@ var timer = setInterval(function(){
     info1.style.display="none";
     info2.style.display="block";
     
-    var paddingLeft=0;
+
+    var op = 0 ;
+    var marginLeft=0;
+    info2.style.opacity = 0;
     var timer = setInterval(function(){
-      if (paddingLeft>=25){
+      if (marginLeft>=60){
           clearInterval(timer);
       }
-      info2.style.paddingLeft= paddingLeft +"px ";
-      paddingLeft=paddingLeft + 1;
-    },10);
+      info2.style.opacity=op;
+      op=op+0.008;
+      info2.style.marginLeft= marginLeft +"px ";
+      marginLeft=marginLeft + 0.5;
+    },5);
 
 
     info3.style.display="none";

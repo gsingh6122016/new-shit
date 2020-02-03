@@ -16,43 +16,43 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding-bottom: 0;
     margin:0px;
 }
 
 .imageWrapper{
     display: block;
-    width: 500px;
+    width: 700px;
     float:left;
      height: 100%; 
-     margin-left: 10%;
+     margin-left: 0;
 
 }
 
 #firstImg{
     background: url("./robotics/back theme.png");
-    /* background-size: 600px 600px; */
-    background-size: contain;
+    background-size: 700px 700px;
     background-repeat: no-repeat;
-        /* margin-left: 5%; */
+        margin-top: 4.5%;
 }
 
+
+#secondImg{
+    background: url("./gaming zone/back.png");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+        margin-top: 4.5%;
+}
 
 #eventHeading{
     font-family: BlackChancery;
     font-size: 60px;
-    /* margin-left: 33%; */
     margin-top: 33%;
     color:#3E221F;
     text-align: center;
   }
 
 .heading{
-  width:400px;
-    margin-top: 5%;
-    margin-left:0;
-    padding-left: 0;
-    padding-top: 0;
+  width:100%;
     color: #4d3107c9;
     font-family:BlackChancery;
     text-align: center;
@@ -61,10 +61,8 @@ body{
     letter-spacing: 0.1em;
 }
 #main{
-    height: 350px;
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: 5%;
+    height: 100%;
+    margin-left: 4%;
 
 }
 
@@ -112,8 +110,12 @@ body{
     padding-left: 0;
     width:20%;
     padding-top: 7%;
+    line-height: 0.8em;
 }
 
+#buttons{
+    margin-top: 30%;
+}
 
 #cards{
     width: 80%;
@@ -121,16 +123,12 @@ body{
     font-size:18px;
     float: left;
     line-height: 1.8em;
-    padding-top: 0;
 }
-/* #info .imageWrapper img{
-    height: 400px;
-} */
+
 .bulletWrapper{
-    width:350px;
+    width:300px;
     float:left;
-    margin-top: 5%;
-    padding-left: 6%;
+    margin-top: 15%;
  }
  
  .bulletWrapper img{
@@ -138,16 +136,52 @@ body{
  }
  
  #bulletOne{
-
    margin-left:30%;
+   transition: 1s;
+   transform :scale(1);
  }
  
+ #bulletOne:hover{
+    margin-left:35%;
+    cursor: pointer;
+    transform :scale(1.1);
+  }
+
  #bulletThree{
    margin-left:30%;
+   transition: 1s;
+   transform :scale(1);
  }
  
+ #bulletThree:hover{
+    margin-left:35%;
+    cursor: pointer;
+    transform :scale(1.1);
+  }
+
+#bulletTwo{
+    transition: 1s;
+    transform :scale(1);
+}
+
+  #bulletTwo:hover{
+    margin-left:-8%;
+    cursor: pointer;
+    transform :scale(1.1);
+  }
+
+  #bulletFour{
+    transition: 1s;
+    transform :scale(1);
+  }
+
+  #bulletFour:hover{
+    margin-left:-8%;
+    cursor: pointer;
+    transform :scale(1.1);
+  }
+
  #firstBullet{
- /* padding-left: 18%; */
  padding-top: 2%;
  }
  
@@ -157,23 +191,15 @@ body{
     text-align: center;
     display:none;
     width: 100%;
-    height:500px;
-    padding-left: 0;
+    height:700px;
 }
-.sign{
-    text-align: left;
-    margin-left: 0;
-    font-family: BlackChancery;
-    font-size: 25px;
-    line-height: 1.8em;
-    padding-left: 0;
-}
+
 #info2{
     text-align: center;
     display:none;
     width: 100%;
-    height:500px;
-    padding-left: 0;
+    height:700px;
+    
 }
 #info3{
     font-size: 20px;
@@ -217,150 +243,114 @@ span{
 
 @media(max-width:600px){
 
-  h1{
-      color: #d1881bc2;
-      font-family:BlackChancery;
-      text-align: center;
-      height: 100px;
-      font-size: 60px;
-      margin-top: 0;
-      letter-spacing: 0.1em;
-  }
+    #myDIV{
+        letter-spacing: 0.1em;
+        font-size: 30px;
+        width:100%;
+        /* padding-top: 7%; */
+        line-height: 0.8em;
+    }
+
+    #cards{
+        width: 100%;
+        text-align: justify;
+        font-size:14px;
+        float: left;
+        line-height: 1.8em;
+    }
+
+
+    #info1{
+
+        text-align: center;
+        display:none;
+        width: 100%;
+        height:300px;
+    }
+
+    .imageWrapper{
+        display: block;
+        width: 300px;
+        float:left;
+         height: 300px; 
+         margin-left: -8%;
+    
+    }
+    
+    #firstImg{
+        background: url("./robotics/back theme.png");
+        /* background-size: 400px 400px; */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #secondImg{
+        background: url("./gaming zone/back.png");
+        /* background-size: 400px 400px; */
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+    }
+
+    #eventHeading{
+        font-family: BlackChancery;
+        font-size: 40px;
+        margin-left: 0;
+        margin-top: 33%;
+        color:#3E221F;
+        text-align: center;
+      }
+
+      #buttons{
+        margin-top:0;
+        margin-left:10%;
+    }
+
+    #main{
+
+        margin-left: 0;
+    }
+
+    .bulletWrapper{
+        width:100%;
+        float:left;
+        margin-top: 5%;
+     }
+     
+     .bulletWrapper img{
+      height:60px;
+     }
+
+     #bulletOne{
+        width:300px;
+        margin-left:0;
+      }
+      
+      #bulletTwo{
+        width:300px;
+        margin-left:-15%;
+      }
+
+      #bulletThree{
+          width:300px;
+        margin-left:0;
+      }
+
+      #bulletFour{
+        width:300px;
+        margin-left:-15%;
+      }
 
    }
 
    @media(max-width:450px){
-     body{
-       height:700px;
-     }
-
-     h1{
-         color: #d1881bc2;
-         font-family:BlackChancery;
-         text-align: center;
-         height: 100px;
-         font-size: 40px;
-         margin-top: 0;
-         letter-spacing: 0.1em;
-         margin-bottom: 0;
-     }
-
-     .content-wrapper{
-         height:100%;
-         width: 100%;
-         padding: ;
-         margin-left:0 ;
-         display: flex;
-         flex-direction: column;
-         overflow-y: auto;
-
-     }
-
-     .design{
-         margin-top: -25%;
-         margin-left: -25%;
-     }
-
-     .design2{
-         padding-right: 0;
-         padding-left: 0;
-         margin-left: 17%;
-         margin-right: 0;
-         margin-bottom: 0;
-     }
-
-     #info1{
-
-         text-align: center;
-         display:none;
-         width: 100%;
-         padding-left: 0;
-     }
-     .sign{
-         text-align: left;
-         margin-left: 5%;
-         font-family: BlackChancery;
-         font-size: 16px;
-         line-height: 1.8em;
-         padding-left: 0;
-     }
-     #info2{
-         font-size: 20px;
-         font-family: BlackChancery;
-         display:none;
-         width: 300px;
-     }
-     #info3{
-         font-size: 20px;
-         font-family: BlackChancery;
-         display:none;
-         width: 300px;
-     }
-     #info4{
-         font-size: 20px;
-         font-family: BlackChancery;
-         display:none;
-         width: 300px;
-     }
-
-     #head img{
-         height:200px;
-         width:200px;
-         animation: rotation_mail_image 50s infinite linear;
-     }
-
-     #main img{
-       height:200px;
-       width:200px;
-         animation: rotation_mail_image 50s infinite linear;
-     }
-
-     #main{
-         display:flex;
-         height: 350px;
-         padding-top: 0;
-         margin-top: 3%;
-         margin-left: 5%;
-         justify-content: flex-start;
-
-     }
-
-     #cards{
-         width: 300px;
-         text-align: justify;
-         font-size:18px;
-         float: left;
-         line-height: 1.8em;
-         padding-top: 0;
-     }
-
-     #myDIV{
-         font-size: 20px;
-         margin-left: 10%;
-     }
-
-     .heading{
-       width:400px;
-         margin-top: 0;
-         margin-left: 6%;
-         padding-left: 0;
-         padding-top: 0;
-     }
+     
+     
 
       }
+
       @media(max-width:411px)
       {
-        body{
-          height:823px;
-
-        }
-        #cards{
-        margin-left: 3%;
-      }
-       #myDIV{
-         margin-left: 16%;
-       }
-      h1{
-        margin-left: -5%;
-      }
+       
+     
       }
