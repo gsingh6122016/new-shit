@@ -141,11 +141,7 @@ body{
    transform :scale(1);
  }
  
- #bulletOne:hover{
-    margin-left:35%;
-    cursor: pointer;
-    transform :scale(1.1);
-  }
+
 
  #bulletThree{
    margin-left:30%;
@@ -153,33 +149,21 @@ body{
    transform :scale(1);
  }
  
- #bulletThree:hover{
-    margin-left:35%;
-    cursor: pointer;
-    transform :scale(1.1);
-  }
+
 
 #bulletTwo{
     transition: 1s;
     transform :scale(1);
 }
 
-  #bulletTwo:hover{
-    margin-left:-8%;
-    cursor: pointer;
-    transform :scale(1.1);
-  }
+ 
 
   #bulletFour{
     transition: 1s;
     transform :scale(1);
   }
 
-  #bulletFour:hover{
-    margin-left:-8%;
-    cursor: pointer;
-    transform :scale(1.1);
-  }
+ 
 
  #firstBullet{
  padding-top: 2%;
@@ -238,7 +222,59 @@ span{
 }
 
 
+@media(min-width:600px){
 
+    #bulletOne:hover{
+        margin-left:35%;
+        cursor: pointer;
+        transform :scale(1.1);
+      }
+
+      #bulletTwo:hover{
+        margin-left:-8%;
+        cursor: pointer;
+        transform :scale(1.1);
+      }
+      
+      #bulletThree:hover{
+           margin-left:35%;
+        cursor: pointer;
+        transform :scale(1.1);
+      }
+
+      #bulletFour:hover{
+        margin-left:-8%;
+        cursor: pointer;
+        transform :scale(1.1);
+      }
+}
+
+@media(max-width:1440px){
+
+    .imageWrapper{
+        display: block;
+        width: 600px;
+        float:left;
+         height: 100%; 
+         margin-left: 0;
+    
+    }
+    
+    #firstImg{
+        background: url("./robotics/back theme.png");
+        background-size: 600px 600px;
+        background-repeat: no-repeat;
+            margin-top: 4.5%;
+    }
+    
+    
+    #secondImg{
+        background: url("./gaming zone/back.png");
+        background-size: 600px 600px;
+        background-repeat: no-repeat;
+            margin-top: 4.5%;
+    }
+}
 
 
 @media(max-width:600px){
