@@ -85,6 +85,7 @@ var timer = setInterval(function(){
   btn4.style.fontWeight="normal";
    
     }
+
     btn3.onclick= function() {
         info1.style.display="none";
         info2.style.display="none";
@@ -108,3 +109,147 @@ var timer = setInterval(function(){
             }
                   
       
+
+
+
+
+var modal1 = document.getElementById("night1pop");
+var modal2 = document.getElementById("night2pop");
+var modal3 = document.getElementById("night3pop");
+var modal4 = document.getElementById("night4pop");
+
+var bt1 = document.getElementById("bulletOne");
+var bt2 = document.getElementById("bulletTwo");
+var bt3 = document.getElementById("bulletThree");
+var bt4 = document.getElementById("bulletFour");
+
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
+
+bt1.onclick = function() {
+ 
+  // modal2.style.display = "none";
+  // modal3.style.display = "none";
+  
+  var op = 0.1;
+    modal1.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        modal1.style.opacity = op;
+        
+        op =op+0.1;
+    }, 30);
+  
+  }
+
+bt2.onclick = function() {
+    // modal1.style.display = "none";
+    // modal3.style.display = "none";
+    var op = 0.1;  
+    modal2.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        modal2.style.opacity = op;
+        
+        op =op+0.1;
+    }, 30);
+  }
+
+  bt3.onclick = function() {
+    // modal1.style.display = "none";
+    // modal2.style.display = "none";
+    var op = 0.1;  
+    modal3.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        modal3.style.opacity = op;
+        
+        op =op+0.1;
+    }, 30);
+  }
+
+  bt4.onclick = function() {
+    // modal1.style.display = "none";
+    // modal2.style.display = "none";
+    var op = 0.1;  
+    modal4.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        modal4.style.opacity = op;
+        
+        op =op+0.1;
+    }, 30);
+  }
+
+
+
+span.onclick = function() {
+  
+  var op = 1;  
+    var timer = setInterval(function () {
+        if (op <= 0){
+            clearInterval(timer);
+            modal1.style.display = "none";
+        }
+        modal1.style.opacity = op;
+        op =op-0.1;
+        
+    }, 10);
+    
+    
+}
+
+span1.onclick = function() {
+    
+  var op = 1;  
+  var timer = setInterval(function () {
+      if (op <= 0){
+          clearInterval(timer);
+          modal2.style.display = "none";
+      }
+      modal2.style.opacity = op;
+      op =op-0.1;
+      
+  }, 10);
+
+  }
+
+
+span2.onclick = function() {
+
+  var op = 1;  
+  var timer = setInterval(function () {
+      if (op <= 0){
+          clearInterval(timer);
+          modal3.style.display = "none";
+      }
+      modal3.style.opacity = op;
+      op =op-0.1;
+      
+  }, 10);
+  }
+ 
+  
+span3.onclick = function() {
+
+  var op = 1;  
+  var timer = setInterval(function () {
+      if (op <= 0){
+          clearInterval(timer);
+          modal4.style.display = "none";
+      }
+      modal4.style.opacity = op;
+      op =op-0.1;
+      
+  }, 10);
+  }
